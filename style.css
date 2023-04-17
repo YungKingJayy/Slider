@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 60%;
+    margin: 14% auto;
+    position: relative;
+}
+
+#slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    border-radius: 3px;
+}
+
+/* Design slider button */
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+#selector {
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.selectBtn {
+    height: 48px;
+    width: 48px;
+    /* background-image: url(https://fadzrinmadu.github.io/hosted-assets/range-slider-using-html-and-css/icon.png);
+    background-size: cover;
+    background-position: center; */
+    background-color: #ffd200;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#selectValue {
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    top: -20%;
+    background: #ffd200;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#selectValue::after {
+    /* content: '';
+    border-top: 17px solid #ffd200;
+    border-left: 24px solid #000;
+    border-right: 24px solid #000;
+    position: absolute;
+    bottom: -14px;
+    left: 0; */
+}
+
+#selectWords {
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    bottom: -20%;
+    background: #ffd200;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#progressBar {
+    width: 0%;
+    height: 7px;
+    background: #ffd200;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    padding: 3em;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background: grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.active {
+    background: #ffd200;
+}
